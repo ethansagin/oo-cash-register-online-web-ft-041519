@@ -20,7 +20,7 @@ class CashRegister
     if discount == 0
       return "There is no discount to apply."
     else
-      @total = @total*(1.00-(discount/100.00))
+      self.total = @total*(1.00-(discount/100.00))
       return "After the discount, the total comes to $#{@total.to_i}."
     end
   end
